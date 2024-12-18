@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BFSL</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <textarea id="editor">[
+  This is an example BFSL shader. It is equivalent to the following GLSL:
+  gl_FragColor = vec4(texCoord, 0.0, 1.0);
+  GL values are passed through BF cells: first cell is reserved, second and third cells are equal to texture UV position, fourth, fifth and sixth cells are used to output gl_FragColor as RGB.
+  Each of 3000 cells is a single byte.
+]
+
+>[->>+<<]
+>[->>+<<]</textarea>
+        <script src="index.js"></script>
+    </body>
+</html>
